@@ -40,29 +40,50 @@ export function Hero() {
         aria-hidden="true"
       >
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-          w-[500px] h-[500px]
-          bg-[radial-gradient(circle,rgba(118,185,0,0.12)_0%,rgba(118,185,0,0)_70%)]"
+          className="
+            absolute top-1/2 left-1/2
+            -translate-x-1/2 -translate-y-1/2
+            w-[500px] h-[500px]
+            bg-[radial-gradient(circle,rgba(118,185,0,0.12)_0%,rgba(118,185,0,0)_70%)]
+          "
         />
 
         <div
-          className="absolute -right-40 top-20
-          w-[500px] h-[500px]
-          bg-[radial-gradient(circle,rgba(118,185,0,0.07)_0%,transparent_70%)]"
+          className="
+            absolute -right-40 top-20
+            w-[500px] h-[500px]
+            bg-[radial-gradient(circle,rgba(118,185,0,0.07)_0%,transparent_70%)]
+          "
         />
 
         <div
-          className="absolute -left-40 bottom-0
-          w-[450px] h-[450px]
-          bg-[radial-gradient(circle,rgba(118,185,0,0.06)_0%,transparent_70%)]"
+          className="
+            absolute -left-40 bottom-0
+            w-[450px] h-[450px]
+            bg-[radial-gradient(circle,rgba(118,185,0,0.06)_0%,transparent_70%)]
+          "
         />
       </div>
 
       {/* Main Hero Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-28 pb-20">
-        <div className="grid lg:grid-cols-[1.3fr_0.7fr] gap-12 items-center">
+      <div
+        className="
+          relative z-10 w-full max-w-7xl mx-auto
+          px-4 sm:px-6
+          pt-24 sm:pt-28
+          pb-16 sm:pb-20
+        "
+      >
+        <div
+          className="
+            grid
+            lg:grid-cols-[1.3fr_0.7fr]
+            gap-8 sm:gap-12
+            items-center
+          "
+        >
           {/* Left Side */}
-          <div className="max-w-5xl">
+          <div className="max-w-5xl w-full">
             {/* Name */}
             <motion.h1
               initial={{ opacity: 0, y: 25 }}
@@ -71,7 +92,18 @@ export function Hero() {
                 delay: 0.1,
                 duration: 0.6,
               }}
-              className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-6 whitespace-nowrap"
+              className="
+                text-4xl
+                sm:text-5xl
+                md:text-7xl
+                lg:text-8xl
+                font-extrabold
+                tracking-tight
+                mb-5
+                sm:mb-6
+                whitespace-normal
+                sm:whitespace-nowrap
+              "
               style={{
                 fontFamily: "Inter, Arial, Helvetica, sans-serif",
                 fontWeight: 900,
@@ -97,7 +129,16 @@ export function Hero() {
                 delay: 0.2,
                 duration: 0.5,
               }}
-              className="text-xl md:text-2xl lg:text-3xl font-semibold tracking-wide mb-7"
+              className="
+                text-lg
+                sm:text-xl
+                md:text-2xl
+                lg:text-3xl
+                font-semibold
+                tracking-wide
+                mb-6
+                sm:mb-7
+              "
               style={{
                 color: "var(--foreground)",
                 fontFamily: "Inter, Arial, Helvetica, sans-serif",
@@ -105,7 +146,7 @@ export function Hero() {
             >
               QA AUTOMATION ENGINEER
               <span
-                className="mx-3"
+                className="mx-2 sm:mx-3"
                 style={{
                   color: "#76b900",
                 }}
@@ -129,7 +170,15 @@ export function Hero() {
                 delay: 0.3,
                 duration: 0.6,
               }}
-              className="text-lg md:text-xl leading-relaxed max-w-3xl mb-8"
+              className="
+                text-base
+                sm:text-lg
+                md:text-xl
+                leading-relaxed
+                max-w-3xl
+                mb-7
+                sm:mb-8
+              "
               style={{
                 color: "var(--muted)",
                 fontFamily: "Inter, Arial, Helvetica, sans-serif",
@@ -152,7 +201,7 @@ export function Hero() {
                 delay: 0.4,
                 duration: 0.6,
               }}
-              className="flex flex-wrap gap-3 mb-10"
+              className="flex flex-wrap gap-2 sm:gap-3 mb-8 sm:mb-10"
             >
               {[
                 "Manual Testing",
@@ -164,7 +213,16 @@ export function Hero() {
               ].map((skill) => (
                 <span
                   key={skill}
-                  className="px-4 py-2 rounded-full text-sm font-medium"
+                  className="
+                    px-3
+                    sm:px-4
+                    py-1.5
+                    sm:py-2
+                    rounded-full
+                    text-xs
+                    sm:text-sm
+                    font-medium
+                  "
                   style={{
                     background: "rgba(118, 185, 0, 0.1)",
                     border: "1px solid rgba(118, 185, 0, 0.35)",
@@ -185,7 +243,7 @@ export function Hero() {
                 delay: 0.5,
                 duration: 0.6,
               }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full"
             >
               {/* View Projects */}
               <button
@@ -195,7 +253,17 @@ export function Hero() {
                     behavior: "smooth",
                   });
                 }}
-                className="px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-[1.02]"
+                className="
+                  w-full
+                  sm:w-auto
+                  px-8
+                  py-4
+                  rounded-full
+                  font-semibold
+                  transition-all
+                  duration-300
+                  hover:scale-[1.02]
+                "
                 style={{
                   background: "#76b900",
                   color: "#000000",
@@ -213,7 +281,18 @@ export function Hero() {
                     behavior: "smooth",
                   });
                 }}
-                className="px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-white hover:text-black"
+                className="
+                  w-full
+                  sm:w-auto
+                  px-8
+                  py-4
+                  rounded-full
+                  font-semibold
+                  transition-all
+                  duration-300
+                  hover:bg-white
+                  hover:text-black
+                "
                 style={{
                   border: "1px solid rgba(255,255,255,0.6)",
                   color: "#ffffff",
@@ -322,10 +401,10 @@ export function Hero() {
             delay: 1,
             duration: 0.8,
           }}
-          className="mt-16 flex items-center gap-3"
+          className="mt-12 sm:mt-16 flex items-center gap-3"
         >
           <span
-            className="w-2 h-2 rounded-full"
+            className="w-2 h-2 rounded-full shrink-0"
             style={{
               background: "#76b900",
               boxShadow: "0 0 10px rgba(118,185,0,0.7)",
@@ -333,7 +412,13 @@ export function Hero() {
           />
 
           <span
-            className="text-xs tracking-[0.2em] uppercase"
+            className="
+              text-[10px]
+              sm:text-xs
+              tracking-[0.15em]
+              sm:tracking-[0.2em]
+              uppercase
+            "
             style={{
               color: "var(--muted)",
               fontFamily: "Inter, Arial, Helvetica, sans-serif",
